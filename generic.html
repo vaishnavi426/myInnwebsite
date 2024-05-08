@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Wokring of the model</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+		<header id="header">
+			<a href="index.html" class="title">Awaaz</a>
+			<nav>
+				<ul style="font-size: 20px;">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="generic.html">Wokring</a></li>
+					<li><a href="elements.html"  class="active">What does it do?</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Working of the Model</h1>
+							<h3>1. Preprocessing and Hand Detection (OpenCV):</h3><br>
+							<ul>
+								<li><b>Frame Grabbing: </b>OpenCV captures frames (images) from the camera feed continuously.</li><br>
+								
+								<li><b>Noise Reduction: </b>Techniques like filtering might be applied to reduce noise and improve image clarity.</li><br>
+								
+								<li><b>Skin Detection: </b>OpenCV can identify skin-tone pixels, potentially isolating hands from the background.</li><br>
+								
+								<li><b>Hand Segmentation: </b>Refining the hand region by separating fingers from other objects in the frame.</li><br>
+							</ul>
+							<hr>
+							<h3>2. Feature Extraction (OpenCV and Machine Learning):</h3><br>
+								<ul>
+									<li><b>Landmark Detection: </b>OpenCV can detect key points (landmarks) on the hand, like fingertips and palm center.</li><br>
+									
+								</ul>
+								<hr>
+							<h3>3. Gesture Recognition and Text-to-Speech (gTTS): </h3><br>
+								<ul>
+									<li><b>Decision Making: </b>ased on the extracted features (if not using a machine learning model) or the model's output, the system determines the most likely number represented by the hand gesture.</li><br>
+									
+									<li><b>Confidence Threshold: </b>A minimum confidence score might be set to ensure reliable recognition. If the confidence is below the threshold, the system might not output anything or prompt the user to try again.</li><br>
+									
+									<li><b>Text-to-Speech (gTTS): </b>Once a number is recognized with sufficient confidence, gTTS converts the number into spoken audio for user feedback.</li><br>
+								</ul>
+								<hr>
+
+
+								<h2>What all does it have?</h2>
+								<p>In this project, we are using gestures(by extracting the key points from the library), setting conditions based on the gestures that the code reads and sending data to arduino to turn the LEDs on/off. <br>
+
+									The gesture 1 lets you turn on LED-1, 2 for LED- 2, 3 for LED-3, 5 for turning all the LEDs off and 0 for exiting.</p>
+									
+									<hr>
+									<h3>OpenCV</h2>
+									<p>OpenCV (Open-Source Computer Vision Library) is an open-source computer vision and machine learning software library. OpenCV was built to provide a common infrastructure for computer vision applications and to accelerate the use of machine perception in commercial products.</p>
+									
+									<hr>
+									<h3>Google text to speech </h2>
+									<p>In short, in the "Awaaz" project, gTTS (Google Text-to-Speech) is used to convert customizable text messages into spoken words. When the system detects a gesture representing a number (1 to 5), it generates a text message based on that gesture. This text message is then converted into speech using gTTS and played out loud, providing a means of communication for paralyzed or differently-abled individuals in hospitals or care centers.</p>
+									
+									<hr>
+									<h3>CVZone</h2>
+									<p>Cvzone is the library that develops a bridge between Arduino and python. With the help of the SerialObject module in Cvzone we can connect the arduino port with python as well as send data to arduino and can link any python code with it.</p>
+	
+									<hr>
+	
+									
+							</div>
+					</section>
+
+					<section id="three" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h2>Get in touch</h2>
+							<p>Learn More about our product or about our organization. Send in any queries, suggestions or message you may have. We will do our best to address them all.</p>
+							<div class="split style1">
+								<section>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="name">Name</label>
+												<input type="text" name="name" id="name" />
+											</div>
+											<div class="field half">
+												<label for="email">Email</label>
+												<input type="text" name="email" id="email" />
+											</div>
+											<div class="field">
+												<label for="message">Message</label>
+												<textarea name="message" id="message" rows="5"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><a href="" class="button submit">Send Message</a></li>
+										</ul>
+									</form>
+								</section>
+								<section>
+									<ul class="contact">
+										<li>
+											<h3>Address</h3>
+											<span>Welham Girls' School, <br>12, Circular Road,<br />
+											Dalanwala, Dehradun<br />
+											India</span>
+										</li>
+										<li>
+											<h3>Email</h3>
+											<a href="#">b426.2019@welhamgirls.com</a>
+											<a href="#">f571.2019@welhamgirls.com</a>
+										</li>
+										<li>
+											<h3>Phone</h3>
+											<span>0135-2654754</span>
+										</li>
+										<li>
+											<h3>Social</h3>
+											<ul class="icons">
+												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
